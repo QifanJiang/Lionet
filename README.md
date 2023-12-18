@@ -26,7 +26,7 @@ ganache-cli
 ```
 and setup the corresponding network with your metamask wallet.
 
-Finally, you would do 
+Finally, you would run the line 
 ```bash
 npm run local
 ```
