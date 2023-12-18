@@ -18,7 +18,7 @@ Since our project used pinata which allows users to upload the NFTs to a cloud d
 **Simply just change your own pinataGatewayToken and JWT.**
 
 Also, don't forget to change the domain on this line
-[here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54C1-L55C1) 
+[here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54C1) 
 
 If you want to test with a local network, don’t forget to start the ganache using the command:
 ```bash
