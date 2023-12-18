@@ -17,7 +17,9 @@ Since our project used pinata which allows users to upload the NFTs to a cloud s
 
 ## Example on creating a Pinata account
 > **1. Create account**
+
 > **2. Under the Gateaways tab, you will automatically generate your distinct domain. Change your own domain on this line [here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54) **
+
 > **3. Under API keys, generate a new key and set as admin.**
 
 
