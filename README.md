@@ -22,7 +22,7 @@ Since our project used pinata which allows users to upload the NFTs to a cloud s
 > 4. Paste your API credentials within a newly created .env file in the root folder.<img width="829" alt="envfile pic " src="https://user-images.githubusercontent.com/30332629/236955423-0e201a56-ed2c-484e-8373-138331e3cff8.png">
 
   **NOTE: Simply just swap to your own pinataGatewayToken and JWT.**
-> 5. more
+> 5. Whenever you create a NFT using the program, the NFT will be uploaded under the files. <img width="829" alt="envfile pic " src="https://github.com/willeff1122/random-pic/blob/main/Screenshot%202023-12-18%20at%206.14.17%20PM.png">
 
 
 
