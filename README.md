@@ -17,7 +17,7 @@ Since our project used pinata which allows users to upload the NFTs to a cloud s
 
 ### Example on creating a Pinata account
 > 1. Create account
-> 2. Under the Gateaways tab, you will automatically generate your distinct domain. Change your own domain on this line [here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54)
+> 2. Under the Gateaways tab, you will be automatically generated your distinct domain. Change your own domain on this line [here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54)
 > 3. Under API keys, generate a new key and set as admin.
 > 4. Paste your API credentials within a newly created .env file in the root folder.<img width="829" alt="envfile pic " src="https://user-images.githubusercontent.com/30332629/236955423-0e201a56-ed2c-484e-8373-138331e3cff8.png">
 
@@ -33,11 +33,11 @@ ganache-cli
 ```
 and setup the corresponding network with your metamask wallet.
 
-Finally, you would run the line 
+Finally, you would run the line to deploy it on local host:
 ```bash
 npm run local
 ```
-in your terminal. Open http://localhost.3000 with your browser and have fun!
+Open http://localhost.3000 with your browser and have fun!
 
 
 
