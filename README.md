@@ -11,11 +11,11 @@ The first thing when you download the file is to run
 ```bash
 npm install
 ```
-within the file.
+within the file terminal.
 
 Since our project used pinata which allows users to upload the NFTs to a cloud storage. If you want to use pinata as we did, you would have to create your own pinata account and store the corresponding account details in a .env file like we did. An example is provided below. 
 
-## Example on creating a Pinata account
+### Example on creating a Pinata account
 > 1. Create account
 > 2. Under the Gateaways tab, you will automatically generate your distinct domain. Change your own domain on this line [here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54)
 > 3. Under API keys, generate a new key and set as admin.
