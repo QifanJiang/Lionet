@@ -197,7 +197,7 @@ export default function CreatorDashboard() {
                         <img src={nft.image} className="img-thumbnail" style={{ width: '100%', height: 'auto' }} alt="NFT" />
                         <div className="p-2">
                           <p className="text-2xl font-semibold"> {nft.name}</p>
-                          <div style={{ height: '20px', overflow: 'hidden' }}>
+                          <div>
                             <p className="text-gray-400">{nft.description}</p>
                           </div>
                         </div>
@@ -223,7 +223,7 @@ export default function CreatorDashboard() {
                         <img src={nft.image} className="img-thumbnail" style={{ width: '100%', height: 'auto' }} alt="NFT" />
                         <div className="p-2">
                           <p className="text-2xl font-semibold"> {nft.name}</p>
-                          <div style={{ height: '20px', overflow: 'hidden' }}>
+                          <div>
                             <p className="text-gray-400">{nft.description}</p>
                           </div>
                         </div>

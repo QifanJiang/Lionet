@@ -107,7 +107,7 @@ export default function Home() {
                         <img src={nft.image} className="img-thumbnail" style={{ width: '100%', height: 'auto' }} alt="NFT" />
                         <div className="p-2">
                           <p className="text-2xl font-semibold"> {nft.name}</p>
-                          <p className="text-lg">{nft.description}</p>
+                          <p className="text-gray-400">{nft.description}</p>
                         </div>
                         <div className="p-4" style={{ backgroundColor: 'white' }}>
                           <p className="text-2xl mb-4 font-bold">Price: {nft.price} Eth</p>
