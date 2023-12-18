@@ -2,8 +2,11 @@
 A Decentralized NFT Marketplace with Multi-Token Flexibility and Dynamic Auctions
 
 ## Team members:
-Jiafu Chen jc5874; Qifan Jiang qj2172; Shouqiao Wang sw3717
+Jiafu Chen jc5874
+Qifan Jiang qj2172
+Shouqiao Wang sw3717
 
+## Instructions:
 The first thing when you download the file is to run 
 ```bash
 npm install
