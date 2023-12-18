@@ -1,7 +1,7 @@
 # Lionet
 A Decentralized NFT Marketplace with Multi-Token Flexibility and Dynamic Auctions
 
-Team members:
+## Team members:
 Jiafu Chen jc5874; Qifan Jiang qj2172; Shouqiao Wang sw3717
 
 
