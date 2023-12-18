@@ -19,10 +19,11 @@ Since our project used pinata which allows users to upload the NFTs to a cloud s
 > 1. Create account
 > 2. Under the Gateaways tab, you will automatically generate your distinct domain. Change your own domain on this line [here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54)
 > 3. Under API keys, generate a new key and set as admin.
+> 4. Paste your API credentials within a newly created .env file in the root folder.<img width="586" alt="image" src="https://user-images.githubusercontent.com/30332629/236952357-fc3b6ab7-7f41-45b9-883e-91a19b0bbc28.png">
+> 5. **NOTE: Simply just swap to your own pinataGatewayToken and JWT.**
 
 
 
-**Simply just change your own pinataGatewayToken and JWT.**
 
 Also, don't forget to change to your own domain on this line
 [here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54) 
