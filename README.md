@@ -37,7 +37,7 @@ Finally, you would run the line to deploy it on local host:
 ```bash
 npm run local
 ```
-Open http://localhost.3000 with your browser and have fun!
+Lastly, open http://localhost.3000 with your browser and have fun!
 
 
 
