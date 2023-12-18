@@ -13,7 +13,15 @@ npm install
 ```
 within the file.
 
+Since our project used pinata which allows users to upload the NFTs to a cloud database. If you want to use pinata as we did, you would have to create your own pinata account and store the account details in a .env file like we did. An example is provided below. 
 
+You could simply just change your own pinataGatewayToken and JWT.
+
+If you want to test with a local network, don’t forget to start the ganache using the command:
+```bash
+ganache-cli
+```
+and setup the corresponding network with your metamask wallet.
 
 
 
