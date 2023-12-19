@@ -1,69 +1,48 @@
 # Lionet
 A Decentralized NFT Marketplace with Multi-Token Flexibility and Dynamic Auctions
 
-Team members:
-Jiafu Chen jc5874; Qifan Jiang qj2172; Shouqiao Wang sw3717
+## Team members:
+- Jiafu Chen jc5874
+- Qifan Jiang qj2172
+- Shouqiao Wang sw3717
 
+## Instructions:
+The first thing when you download the file is to run 
+```bash
+npm install
+```
+within the file terminal.
 
-Pain Points:
+Since our project used pinata which allows users to upload the NFTs to a cloud storage. If you want to use pinata as we did, you would have to create your own pinata account and store the corresponding account details in a .env file like we did. An example is provided below. 
 
-1. Limited Auction Functionality:
-   Most of the NFT markets on the market are purely for buying and selling, and they do not support auction functionality. Even if some platforms support auctions, they only offer Open Ascending Auction. 
+### Example on creating a Pinata account
+> 1. Create account
+> 2. Under the Gateaways tab, you will be automatically generated your distinct domain. Change your own domain on this line [here](https://github.com/QifanJiang/Lionet/blob/5b22ead73fbd33c36d118b9db10a13a31ca12531/pages/create-nft.js#L54)
+> 3. Under API keys, generate a new key and set as admin.<img width="829" alt="envfile pic " src="https://github.com/willeff1122/random-pic/blob/main/Screenshot%202023-12-18%20at%206.05.52%20PM.png">
+> 4. Paste your API credentials within a newly created .env file in the root folder.<img width="829" alt="envfile pic " src="https://user-images.githubusercontent.com/30332629/236955423-0e201a56-ed2c-484e-8373-138331e3cff8.png">
 
-2. Potential Marginal Cost:
-   Since the price of cryptocurrency is constantly changing, the value might decrease over time. For example, if sellers received currencies which are not their need, the time they required to spend on currency swapping may lose the original value.
-
-3. Mismatch Cryptocurrency Type and Process:
-   When an NFT seller specifies a cryptocurrency they accept for their NFT, but potential buyers may have a different type of cryptocurrency. Users then need to navigate multiple platforms to exchange one cryptocurrency for another before acquiring an NFT. This will not only generate additional charges, but also waste time which can result in the desired items being purchased by someone else.
-
-
-
-Proposed Solution:
-
-1. Dynamic Token Exchange:
-
-a. Seller's Choice: Sellers can list their NFTs and set a price in a specific type of ERC20 token of their preference.
-b. Buyer's Choice: Buyers can pay using any ERC20 token. 
-c. Swap Token: If the buyer's token differs from the seller's preference, our platform will automatically swap the buyer's token to the seller's chosen token.
-   Option 1: Integration with Uniswap: We can utilize Uniswap's API to facilitate the token swaps.
-   Option 2: In-House Liquidity Pool: We can establish our own liquidity pool, providing more control over swap rates, reducing external dependencies.
-
-The entire transaction process, from payment and token swap, will be governed by a transparent and secure smart contract.
-
-2. Advanced Auction Mechanisms:
-
-Here we proposed two types of auctions as examples.
-
-a. Second Price Auction:
-   Minimum Price Setting: Sellers set a reserve or minimum price for their NFT.
-   Bidding: Buyers can place bids above the set minimum price.
-   Off-chain Locktime: Bids will be securely locked and hidden during the auction duration.
-   Smart Contract Execution: After the locktime, miners access the bids and the smart contract autonomously determines the highest bidder. This bidder wins but pays the second-highest bid amount.
-b. Dutch Auction: 
-   We can create an open descending price auction where the item starts at a high price which is set by the seller that decreases until a buyer is found.
-   Smart Contract Execution: The smart contract calculates the final price of the item and executes it transparently and securely.
-
-
-Why Web3:
-
-1. Security:
-   With the blockchain's inherent security features, our platform ensures every transaction, token swap and auction is tamper-proof, fostering trust among our users.
-
-2. Decentralization:
-   Our platform will utilize peer-to-peer capabilities, enabling users to set preferred ERC-20 tokens, all while avoiding central points of control or failure.
-
-3. Authenticity:
-   Every transaction and auction is securely logged on the blockchain.
-
-4. Anonymity:
-   Users can interact and transact without revealing their personal identities.
+  **NOTE: Simply just swap to your own pinataGatewayToken and JWT.**
+> 5. Whenever you create a NFT using the program, the NFT will be uploaded under the files. <img width="829" alt="envfile pic " src="https://github.com/willeff1122/random-pic/blob/main/Screenshot%202023-12-18%20at%206.14.17%20PM.png">
 
 
 
-Proposed solution is clearly differentiated from the solutions in the market:
 
-1. Integration of Uniswap to resolve the currencies conflicts:
-   Opensea provides support for multiple currencies, including Ethereum, AVAX, USDC, KLAY, and DAI. This flexibility allows buyers to place bids using various currencies. But when a transaction occurs: what if the seller is not willing to accept the particular currency offered by the buyer? In our exploration of Opensea's features, we found no solution to address this. To fill this void, we're considering integrating Uniswap into the transaction process. This integration would offer a novel solution, enabling buyers to pay in their preferred currency while ensuring sellers receive the payment in their desired currency.
+If you want to test with a local network, don’t forget to start the ganache using the command:
+```bash
+ganache-cli
+```
+and setup the corresponding network with your metamask wallet.
 
-2. Changes in NFT bidding process:
-   After our research, we discovered that many NFT trading platforms, aside from Opensea, implement only a real-time purchase form in their buying process. Opensea employs a bidding system similar to renowned platforms like eBay for its NFT products. However, Opensea's system is based on an Open Ascending Auction algorithm, which has inherent disadvantages. Recognizing this gap, our distinct auction algorithms aim to introduce a fresh approach to the market.
+Finally, you would run the line to deploy it on local host:
+```bash
+npm run local
+```
+Lastly, open http://localhost.3000 with your browser and have fun!
+
+
+
+
+
+
+
+

@@ -245,7 +245,4 @@ export default function CreatorDashboard() {
   } else {
     return (<h1 className="py-10 px-20 text-3xl">Loading...</h1>)
   }
-
-  
-  
 }
