@@ -39,10 +39,22 @@ npm run local
 ```
 Lastly, open http://localhost.3000 with your browser and have fun!
 
+## Security:
 
+- Reentrancy Guard: The contract uses OpenZeppelin's 'ReentrancyGuard' which is a mutex-lock mechanism to prevent reentrancy attacks. 
+- Counters: Using OpenZeppelin's 'Counters' library for incrementing token IDs helps prevent overflow issues.
+- Access Control: Functions that should only be callable by the contract owner, such as 'updateListingPrice', are protected with a 'require' statement that checks the sender's address.
+- Safe ERC721 Transfers: The contract uses the '_transfer' function from ERC721, which includes checks for safe transfers, ensuring that tokens aren't sent to contracts that aren't prepared to handle them (unless intentionally done).
+- Use of 'payable' Addresses: When transferring Ether, the contract uses 'payable' addresses to ensure that the addresses are capable of receiving Ether.
 
+## Create NFT Testing:
+![Create NFT](https://github.com/QifanJiang/Lionet/assets/76965351/6626cf0e-efc8-42a6-8a2c-7409c7a2fc80)
 
+## Sell NFT Testing:
+![Sale NFT](https://github.com/QifanJiang/Lionet/assets/76965351/5c8e263d-cf66-4a82-8a01-383f42b9f175)
 
+## Purchase NFT Testing:
+![Purchase NFT](https://github.com/QifanJiang/Lionet/assets/76965351/2b125d18-53ab-4a35-a03d-18b9cc53ca80)
 
 
 
